@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бургерная</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Бургерная</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cart">Корзина</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Добро пожаловать в нашу Бургерную!</h1>
+        <p class="lead">Самые вкусные бургеры в городе.</p>
+        <a class="btn btn-primary btn-lg" href="#menu" role="button">Наше меню</a>
+    </header>
+
+    <section id="menu" class="container my-5">
+        <h2 class="text-center">Меню</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/my-burger-shop/static/burger1.jpg" class="card-img-top" alt="Бургер 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Классический бургер</h5>
+                        <p class="card-text">Сочный бургер с говядиной, сыром и свежими овощами.</p>
+                        <button class="btn btn-primary order-btn" data-burger="Классический бургер" data-price="10">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/my-burger-shop/static/burger1.jpg" class="card-img-top" alt="Бургер 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Чизбургер</h5>
+                        <p class="card-text">Классический чизбургер с двойной порцией сыра.</p>
+                        <button class="btn btn-primary order-btn" data-burger="Чизбургер" data-price="12">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/my-burger-shop/static/burger1.jpg" class="card-img-top" alt="Бургер 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Вегетарианский бургер</h5>
+                        <p class="card-text">Бургер для вегетарианцев с растительными котлетами.</p>
+                        <button class="btn btn-primary order-btn" data-burger="Вегетарианский бургер" data-price="8">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="container my-5">
+        <h2 class="text-center">Корзина</h2>
+        <div class="cart-items"></div>
+        <div class="total">
+            <h5>Итого: $<span class="total-price">0</span></h5>
+            <button class="btn btn-success" id="checkout">Оформить заказ</button>
+        </div>
+    </section>
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Контакты</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Адрес</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить заказ</button>
+        </form>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

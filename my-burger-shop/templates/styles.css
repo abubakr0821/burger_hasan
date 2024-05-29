@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.jumbotron {
+    background: url('/my-burger-shop/static/burger1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#order-form, #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.total {
+    text-align: right;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
